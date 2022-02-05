@@ -1,1 +1,0 @@
-# mapanimal_frontend
