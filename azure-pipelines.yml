@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'd28ce5ff-0230-4825-8acf-e1152376e4be'
 
   # Web app name
-  webAppName: 'mapanimalui'
+  webAppName: 'MapanimalUI'
 
   # Environment name
-  environmentName: 'mapanimalui'
+  environmentName: 'Prod'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -57,7 +57,7 @@ stages:
         deploy:
           steps:
           - task: AzureRmWebAppDeployment@4
-            displayName: 'Azure App Service Deploy: mapanimalui'
+            displayName: 'Azure App Service Deploy: MapanimalUI'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
