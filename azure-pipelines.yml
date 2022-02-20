@@ -12,7 +12,7 @@ variables:
   azureSubscription: 'd28ce5ff-0230-4825-8acf-e1152376e4be'
 
   # Web app name
-  webAppName: 'mapanimalui'
+  webAppName: 'Mapanimal-UI'
 
   # Environment name
   environmentName: 'Prod-Frontend'
