@@ -63,7 +63,7 @@ stages:
               appType: webAppLinux
               WebAppName: $(webAppName)
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-              RuntimeStack: 'NODE|16-lts'
+              RuntimeStack: 'NODE|12-lts'
               ScriptType: 'Inline Script'
               InlineScript: |
                 npm install
