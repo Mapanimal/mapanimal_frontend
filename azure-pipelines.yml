@@ -20,16 +20,9 @@ steps:
     WebAppName: 'mapanimalui'
     deployToSlotOrASE: true
     ResourceGroupName: 'mapanimalui_group'
-    SlotName: 'develop'
+    SlotName: 'production'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
     RuntimeStack: 'DOTNETCORE|6.0'
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: |
-      npm install
-      npm run start
-  displayName: 'Run a multi-line script'
+    npm install
+    npm run start
