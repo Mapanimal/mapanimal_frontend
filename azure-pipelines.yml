@@ -12,17 +12,3 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-- task: AzureRmWebAppDeployment@4
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'DreamSpark(7ea94dc3-b111-4b29-83cf-d02b0691d7f4)'
-    appType: 'webAppLinux'
-    WebAppName: 'mapanimalui'
-    deployToSlotOrASE: true
-    ResourceGroupName: 'mapanimalui_group'
-    SlotName: 'production'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    RuntimeStack: 'DOTNETCORE|6.0'
-- script: |
-    npm install
-    npm run start
