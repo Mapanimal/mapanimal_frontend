@@ -12,7 +12,7 @@ variables:
   azureSubscription: 'd28ce5ff-0230-4825-8acf-e1152376e4be'
 
   # Web app name
-  webAppName: 'Mapanimal-UI'
+  webAppName: 'ui-mapanimal-prod'
 
   # Environment name
   environmentName: 'Prod-Frontend'
@@ -57,7 +57,7 @@ stages:
         deploy:
           steps:
           - task: AzureRmWebAppDeployment@4
-            displayName: 'Azure App Service Deploy: MapanimalUI'
+            displayName: 'Azure App Service Deploy: ui-mapanimal-prod'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
