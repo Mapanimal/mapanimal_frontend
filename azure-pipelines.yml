@@ -15,7 +15,7 @@ variables:
   webAppName: 'MapanimalUI'
 
   # Environment name
-  environmentName: 'Prod'
+  environmentName: 'Prod-Frontend'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
