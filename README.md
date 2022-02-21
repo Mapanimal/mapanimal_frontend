@@ -6,7 +6,7 @@ From the  terminal/console VSCode or Git Bash:
 - `cd`
 - `mkdir "folder name" ` 
 - `cd "folder name created" ` 
--  ` $ git clone "url("cloned project URL")"  ` 
+-  ` $ git clone https://github.com/Mapanimal/mapanimal_frontend.git ` 
 - Open file in your terminal VSCode or Git Bash.
 
 ```sh
