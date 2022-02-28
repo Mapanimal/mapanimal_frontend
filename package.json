@@ -23,10 +23,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "jest": "jest"
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +54,7 @@
     "babel-plugin-dynamic-import-webpack": "^1.1.0",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.2",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "jest-transform-stub": "^2.0.0"
   }
 }
