@@ -1,7 +1,7 @@
 # Mapanimal
 
 
-## You can clone this repository following way:
+## You can clone this repository in following way:
 
 ```sh
 
