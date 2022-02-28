@@ -12,10 +12,10 @@ variables:
   azureSubscription: 'd28ce5ff-0230-4825-8acf-e1152376e4be'
 
   # Web app name
-  webAppName: 'MapanimalUI'
+  webAppName: 'ui-mapanimal-prod'
 
   # Environment name
-  environmentName: 'Prod'
+  environmentName: 'Prod-Frontend'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -57,14 +57,13 @@ stages:
         deploy:
           steps:
           - task: AzureRmWebAppDeployment@4
-            displayName: 'Azure App Service Deploy: MapanimalUI'
+            displayName: 'Azure App Service Deploy: ui-mapanimal-prod'
             inputs:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               WebAppName: $(webAppName)
               packageForLinux: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-              RuntimeStack: 'NODE|10.10'
-              StartupCommand: 'npm run start'
+              RuntimeStack: 'NODE|12-lts'
               ScriptType: 'Inline Script'
               InlineScript: |
                 npm install
