@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests in <ComponentOne /> <ComponentOne /> it renders well 1`] = `""`;
+
+exports[`tests in <ComponentTwo /> <ComponentTwo /> it renders well 1`] = `""`;
